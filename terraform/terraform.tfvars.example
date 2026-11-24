@@ -1,0 +1,7 @@
+aws_region          = "sa-east-1"
+project_name        = "core-ledger-ingestion"
+environment         = "uat"
+cost_center         = "CC-FINANCE-DATA-01"
+source_location_arn = "arn:aws:datasync:sa-east-1:123456789012:location/loc-0a1b2c3d4e5f67890"
+destination_prefix  = "/inbound/batch"
+bandwidth_limit_bps = 52428800 # 50 MB/s
