@@ -3,9 +3,11 @@
 Blueprint corporativo de **Infrastructure as Code (Terraform)** para padronização, governança e entrega *Self-Service* de fluxos críticos de transferência e ingestão de dados na AWS utilizando **AWS DataSync**, **Amazon S3**, **AWS KMS** e controles nativos de **FinOps** e **Zero Trust**.
 
 ## Arquitetura & Documentação Técnica
+
+![Arquitetura AWS DataSync](./docs/architecture-diagram.drawio.png)
+
 * **[HLD / LLD (High-Level & Low-Level Design)](./docs/HLD-LLD-data-transfer.md):** Especificação arquitetural completa, fluxos de rede privada e guardrails corporativos.
 * **[ADR-001 (Architecture Decision Record)](./docs/ADR-001-datasync-vs-custom-scripts.md):** Justificativa técnica da adoção do AWS DataSync frente a scripts customizados e SFTP.
-* **[Diagrama Draw.io](./docs/architecture-diagram.drawio):** Topologia editável do fluxo híbrido via AWS PrivateLink.
 
 ## Guardrails Embutidos (By Design)
 * **Segurança & Zero Trust:** Bloqueio de acesso público no S3, política obrigatória de transporte TLS (`aws:SecureTransport`), criptografia KMS CMK com rotação anual e IAM Role com privilégio mínimo restrito à conta de origem.
