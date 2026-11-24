@@ -17,7 +17,7 @@ Blueprint corporativo de **Infrastructure as Code (Terraform)** para padronizaç
 ## Como Utilizar (Self-Service)
 
 ```bash
-cd terraform
+cd Terraform
 cp terraform.tfvars.example terraform.tfvars
 # Edite terraform.tfvars com os parâmetros do fluxo
 terraform init
